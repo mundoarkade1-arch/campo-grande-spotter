@@ -25,6 +25,8 @@ jobs:
         uses: actions/checkout@v4
       - name: Preparar GitHub Pages
         uses: actions/configure-pages@v5
+        with:
+          enablement: true
       - name: Registrar versão publicada
         run: echo "window.APP_COMMIT='${GITHUB_SHA}'" > build-info.js
       - name: Enviar arquivos para publicação
