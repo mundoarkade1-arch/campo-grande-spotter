@@ -12,7 +12,7 @@ App web progressivo e responsivo para observar chegadas e partidas no Aeroporto 
 
 ## Publicação
 
-O repositório configurado é `mundoarkade1-arch/campo-grande-spotter`. O workflow `.github/workflows/pages.yml` prepara o GitHub Pages e publica o app em cada push para `main`. A primeira execução pode levar alguns minutos; veja **Actions** no GitHub para acompanhar.
+O repositório configurado é `mundoarkade1-arch/campo-grande-spotter`. Antes do primeiro deploy, abra **Settings → Pages → Build and deployment** no GitHub e selecione **GitHub Actions** como fonte. Depois disso, o workflow `.github/workflows/pages.yml` publica o app automaticamente em cada push para `main`. Acompanhe **Actions** no GitHub.
 
 O botão de verificação consulta a API pública do GitHub e compara o commit mais recente com a versão publicada. Ele está configurado para este repositório.
 

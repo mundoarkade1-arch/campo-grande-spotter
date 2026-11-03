@@ -24,15 +24,17 @@ Pasta do projeto: `work/campo-grande-spotter/`
 - Notificação do navegador é demonstrativa e requer página aberta; alertas em segundo plano precisam de backend/push.
 - O botão “verificar atualização” está configurado para consultar `mundoarkade1-arch/campo-grande-spotter`.
 - A pasta local foi inicializada como repositório Git na branch `main` e o remoto `origin` aponta para `https://github.com/mundoarkade1-arch/campo-grande-spotter.git`.
-- O protótipo foi enviado ao GitHub em seis commits pela integração. O workflow já executou uma vez, mas falhou porque o GitHub Pages não estava habilitado. Foi incluída a opção `enablement: true` para habilitá-lo no novo deploy.
-- O workflow será iniciado de novo ao atualizar sua configuração. Confirmar se concluiu e registrar o URL de Pages publicado.
+- O protótipo e o workflow foram enviados ao GitHub pela integração.
+- O Actions foi iniciado duas vezes e falhou ao preparar Pages: na primeira, o site ainda não existia; na segunda, o token não tinha permissão para criar o site (endpoint `pages` retornou “Resource not accessible by integration”).
+- A usuária precisa fazer a configuração inicial em **Settings → Pages → Build and deployment → Source: GitHub Actions**. Depois, reexecutar o workflow manualmente (ou fazer novo push) e confirmar o URL publicado.
 - Nenhum teste foi executado.
 
 ## Próximos passos
 
-1. Confirmar que o workflow habilitou Pages e publicar em `https://mundoarkade1-arch.github.io/campo-grande-spotter/`.
-2. Depois, escolher fonte legítima e adequada de dados CGR: validar cobertura, atraso, termos, limites e custo antes de integrar.
-3. Trocar dados de demonstração por dados reais, estimativa da melhor janela e mecanismo de alerta apropriado.
+1. A usuária seleciona **GitHub Actions** em **Settings → Pages → Build and deployment**.
+2. Reexecutar o workflow de Pages e confirmar que publicou; então registrar o URL real.
+3. Depois, escolher fonte legítima e adequada de dados CGR: validar cobertura, atraso, termos, limites e custo antes de integrar.
+4. Trocar dados de demonstração por dados reais, estimativa da melhor janela e mecanismo de alerta apropriado.
 
 ## Como continuar amanhã
 
