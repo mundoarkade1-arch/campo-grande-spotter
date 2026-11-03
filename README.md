@@ -10,13 +10,12 @@ App web progressivo e responsivo para observar chegadas e partidas no Aeroporto 
 - O botão de atualização está preparado para consultar a API pública do GitHub após configurar `github-repo` no HTML.
 - A notificação no protótipo é local; notificações confiáveis em segundo plano pedem um serviço de push.
 
-## Publicar no GitHub Pages
+## Publicação
 
-1. Crie um repositório público chamado `campo-grande-spotter` na sua conta GitHub. Não inicialize com README, licença ou `.gitignore`.
-2. No GitHub, abra **Settings → Pages → Build and deployment** e selecione **GitHub Actions**.
-3. Suba o conteúdo desta pasta para o repositório. O workflow `.github/workflows/pages.yml` publica o app automaticamente em cada push para `main`.
-4. O verificador de versão já está configurado para `mundoarkade1-arch/campo-grande-spotter`.
+O repositório configurado é `mundoarkade1-arch/campo-grande-spotter`. O workflow `.github/workflows/pages.yml` prepara o GitHub Pages e publica o app em cada push para `main`. A primeira execução pode levar alguns minutos; veja **Actions** no GitHub para acompanhar.
+
+O botão de verificação consulta a API pública do GitHub e compara o commit mais recente com a versão publicada. Ele está configurado para este repositório.
 
 ## Retomar o trabalho
 
-Leia este README e `HANDOFF.md` no início da próxima sessão. O trabalho está em `work/campo-grande-spotter`; a publicação só começa depois de conectar a conta GitHub e autorizar o envio.
+Leia este README e `HANDOFF.md` no início da próxima sessão. O trabalho está em `work/campo-grande-spotter`.
